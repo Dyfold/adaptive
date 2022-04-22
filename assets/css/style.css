@@ -136,6 +136,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}
     min-height: 200px;
     max-height: 200px;
     text-align: end;
+    overflow: hidden;
 }
 .block__text_transparent{
     border: 6px solid transparent;
@@ -272,6 +273,9 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}
     height: 100%;
     width: 100%;
 }
+.image__block img{
+    width: 100%;
+}
 .image__block_1{
     max-width: 533px;
     display: flex;
@@ -318,6 +322,12 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}
     align-items: center;
     flex: 0 1 auto;
 }
+.image__block_logo img{
+    max-width: 51px;
+    max-height: 30px;
+    width: 100%;
+    height: 100%;
+}
 .image__block_logo p{
     font-family: Lato;
     font-size: 14px;
@@ -326,4 +336,155 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}
     text-transform: uppercase;
     letter-spacing: 0.2em;
     color: #ffffff;
+}
+/* ------------------------------------------------------------------------------------------------ */
+.button{
+    height: 200px;
+    background-color: #282f35;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button__form{
+    width: 300px;
+    height: 50px;
+    background-color: rgba(255,255,255,0.0);
+    border: 1px solid rgba(255,255,255,0.49);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button__form button{
+    background-color: rgba(255,255,255,0.0);
+    font-family: Lato;
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: #ffffff;
+    padding: 16px 55px 16px 55px;
+    overflow: hidden;
+    transition: 1.5s;
+}
+.button__form button:active{
+    background-color: rgba(243, 241, 241, 0.925);
+    font-family: Lato;
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: #1a1a1a;
+}
+.button__form button:hover{
+    background-color: rgba(243, 241, 241, 0.925);
+    font-family: Lato;
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: #1a1a1a;
+}
+/* -------------------------------------------------------------------------------------------------------- */
+.mail{
+    max-height: 469px;
+    height: 100%;
+    padding: 110px 0px 110px 0px;
+}
+.mail__logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 0px 40px 0px;
+}
+.mail__lable{
+    font-family: Lato;
+    font-size: 24px;
+    line-height: 34px;
+    font-weight: 400;
+    font-style: italic;
+    color: #848789;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 0px 35px 0px;
+}
+.mail__form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mail__form input{
+    width: 400px;
+    height: 69px;
+    overflow: hidden;
+    background-color: #ffffff;
+    border: 1px solid #d3d7d9;
+    font-family: Lato;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 400;
+    font-style: italic;
+    color: #929292;
+    margin: 0px 0px 0px 2.5px;
+}
+.mail__form button{
+    width: 126px;
+    height: 69px;
+    background-color: #64c29e;
+    font-family: Lato;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 300;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding: 0px 2.5px 0px 0px;
+}
+/* -------------------------------------------------------------------------------- */
+.footer{
+    height: 250px;
+    background-color: #f7f7f7;
+}
+.footer__main{
+    display: flex;
+    justify-content: space-around;
+    padding: 100px 0px 105px 0px;
+}
+.footer__text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    font-family: Lato;
+    font-size: 13.9px;
+    font-weight: 400;
+    font-style: italic;
+    color: #848789;
+}
+.footer__text:first-child{
+    font-size: 16px;
+    line-height: 17px;
+    font-weight: 700;
+}
+.footer__social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer__social img{
+    padding: 0px 7.5px 0px 7.5px;
+}
+.footer__autor{
+    display: flex;
+    padding: 0px 0px 10px 0px;
+}
+.footer__autor p{
+    font-family: Lato;
+    font-size: 13.9px;
+    line-height: 17px;
+    font-weight: 400;
+    font-style: italic;
+    color: #848789;
 }
